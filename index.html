@@ -1,1 +1,52 @@
-"no"
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="main.css"> */ -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+@font-face { font-family: Metropolis; src: url('assets/metropolis.semi-bold.otf'); } 
+      h1 {
+         font-family: Metropolis
+      }
+
+body {
+  padding: 25px;
+  background-color: rgb(27, 26, 29);
+  color: white;
+  font-size: 25px;
+}
+
+.light-mode {
+    background-color: white;
+  color: black;
+}
+
+button {
+        background-image: url('https://ibb.co/hFcq9wB');
+        background: transparent;
+        border: none;
+        outline: none;
+        background-size: cover;
+        width: 60px;
+        height: 60px;
+        font-size: 2em;
+      }
+</style>
+</head>
+<body>
+    <h1>Krim (Bea)</h1>
+
+    <button onclick="layoutswitch()" style="background-image: url('assets/moon.png');" title="Toggle night mode"/>
+
+<script>
+function layoutswitch() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+
+</script>
+
+</body>
+</html>
+
